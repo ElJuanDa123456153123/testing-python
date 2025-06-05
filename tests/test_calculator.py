@@ -1,6 +1,6 @@
 import unittest
 
-from src.calculator import suma, resta, multiplicacion
+from src.calculator import suma, resta, multiplicacion, division
 
 class CalculatorTest(unittest.TestCase):
     
@@ -13,4 +13,8 @@ class CalculatorTest(unittest.TestCase):
         
     def test_multiplicacion(self):
         self.assertEqual(multiplicacion(4, 3), 12)
+    
+    def test_division(self):
+        self.assertEqual(division(4, 2), 2)
+
         
